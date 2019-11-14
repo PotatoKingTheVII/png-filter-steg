@@ -5,6 +5,7 @@
 | 2) FilterDecoder | Extract filter bytes from an image |
 | 3) ObscureEncoder | Randomize filters to obscure the image |
 | 4) ObscureDecoder | Zeroes all filters and returns the normal image  |
+
 User inputs can be found at the top of each file, FilterDecoder prints the raw filter byte value to be more generalised, to extract any text from the Encoder decode the result in binary.
 
 ## Brief technical overview
