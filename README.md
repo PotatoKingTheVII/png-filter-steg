@@ -8,6 +8,8 @@
 
 User inputs can be found at the top of each file, FilterDecoder prints the raw filter byte value to be more generalised, to extract any text from the Encoder decode the result in binary.
 
+*Compatiable with RGB and RGBA PNGs*
+
 ## Brief technical overview
 PNGs utilise filters before compressing the raw pixel data with zlib to try and reduce the file size. If we manually change these filters beforehand to hide our payload then the pixels can be edited such that when the filters are applied by an image decoder it gives back the original picture seemingly unchanged. The basic flow for encoding is:
 
