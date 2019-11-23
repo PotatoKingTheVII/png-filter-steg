@@ -181,7 +181,7 @@ else: #Is RGBA image
     #print("RGBA")
     for i in range(0,len(Decompressed), (width*4)+1):
         try:
-            Decompressed[i] = int(DataIn[int(i/((width*3)+1))])
+            Decompressed[i] = int(DataIn[int(i/((width*4)+1))])
         except:
             pass
 
