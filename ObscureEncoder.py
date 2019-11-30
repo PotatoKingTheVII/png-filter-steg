@@ -41,7 +41,7 @@ elif(len(img.getbands())==4): #Is RGBA image
 
 IHDR = bytearray(b"\x00\x00\x00\x0D\x49\x48\x44\x52") + width.to_bytes(4, 'big') + height.to_bytes(4, 'big') + bytearray(b"\x08") + bytearray(bytes([ColourType])) + bytearray(b"\x00\x00\x00")
 IHDRCrc = (hex(binascii.crc32(IHDR[4:len(IHDR)])).rjust(8,"0"))
-IHDR = IHDR + bytes.fromhex((IHDRCrc[2:len(IHDRCrc)]))
+IHDR = IHDR + bytes.fromhex((IHDRCrc[2:len(IHDRCrc)].rjust(8,"0")))
 
 PixelArray = bytearray((numpy.array(img.getdata(),numpy.uint8).reshape(img.size[1], img.size[0], Bytes)).tobytes())
 for i in range(0,height):
