@@ -1,5 +1,5 @@
 ## Versions
-This Python version came first and has a few more features while the javascript version was just a port of the normal enc/dec versions for a first web project and can be found https://pngfiltersteg.neocities.org/ or used locally, it's entirely clientside
+The Python version came first and has a few more features while the javascript version was just a port of the normal enc/dec versions for a first web project and can be found https://pngfiltersteg.neocities.org/ or used locally, it's entirely clientside
 
 
 ## File usage
