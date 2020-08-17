@@ -28,9 +28,19 @@ body{
 }
 
 .column {
-	float: left;
+	margin: auto;
 	width: 50%;
 	padding: 10px;
+}
+
+@media only screen and (max-width: 600px) 
+{
+  .column {float: none;}
+}
+
+@media only screen and (min-width: 1200px)
+{
+  .column {float: left;}
 }
 
 .row:after{
